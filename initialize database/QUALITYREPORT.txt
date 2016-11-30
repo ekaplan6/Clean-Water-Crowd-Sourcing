@@ -1,0 +1,35 @@
+--
+-- Table structure for table `QUALITYREPORT`
+--
+
+CREATE TABLE `QUALITYREPORT` (
+  `reportnumber` int(5) NOT NULL,
+  `date` date NOT NULL,
+  `time` time NOT NULL,
+  `name` varchar(35) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `location` varchar(200) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `overallcondition` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `virusPPM` int(10) NOT NULL,
+  `contaminantPPM` int(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `QUALITYREPORT`
+--
+
+INSERT INTO `QUALITYREPORT` (`reportnumber`, `date`, `time`, `name`, `location`, `overallcondition`, `virusPPM`, `contaminantPPM`) VALUES
+(1, '2016-09-29', '22:45:00', 'abhayd', 'Apt. Mitra Oasis\r\nB903 Senen, Jakarta Pusat\r\nIndonesia, 10410', 'Safe', 110, 110),
+(2, '2016-10-29', '22:45:00', 'abhayd', 'Apt. Mitra Oasis\r\nB903 Senen, Jakarta Pusat\r\nIndonesia, 10410', 'Safe', 200, 210),
+(3, '2016-09-29', '11:45:00', 'abhayd', 'Apt. Mitra Oasis\r\nB903 Senen, Jakarta Pusat\r\nIndonesia, 10410', 'Safe', 320, 410),
+(4, '2016-10-29', '11:45:00', 'abhayd', 'Apt. Mitra Oasis\r\nB903 Senen, Jakarta Pusat\r\nIndonesia, 10410', 'Safe', 50, 60),
+(5, '2016-11-29', '22:45:00', 'abhayd', 'Apt. Mitra Oasis\r\nB903 Senen, Jakarta Pusat\r\nIndonesia, 10410', 'Safe', 50, 70);
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `QUALITYREPORT`
+--
+ALTER TABLE `QUALITYREPORT`
+  ADD PRIMARY KEY (`reportnumber`);

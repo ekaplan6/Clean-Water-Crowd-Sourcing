@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test.java.model.ReportManagerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2016-11-16T16:30:14" hostname="lawn-128-61-32-142.lawn.gatech.edu" time="7.731">
+  <properties/>
+  <testcase name="deleteWaterReportTest" classname="test.java.model.ReportManagerTest" time="7.731"/>
+  <system-out><![CDATA[tested deleting water report
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,33 @@
+--
+-- Table structure for table `WATERREPORT`
+--
+
+CREATE TABLE `WATERREPORT` (
+  `reportnumber` int(5) NOT NULL,
+  `date` date NOT NULL,
+  `time` time NOT NULL,
+  `name` varchar(35) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `location` varchar(200) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `watertype` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `watercondition` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `WATERREPORT`
+--
+
+INSERT INTO `WATERREPORT` (`reportnumber`, `date`, `time`, `name`, `location`, `watertype`, `watercondition`) VALUES
+(3, '2016-10-04', '17:48:12', 'abhayd', '930 Spring St NW\nAtlanta, GA 30309', 'Bottled', 'Waste'),
+(4, '2016-10-04', '17:48:45', 'abhayd', 'The Plaza Midtown\n950 W Peachtree St NE\nAtlanta, GA 30309', 'Lake', 'Potable'),
+(5, '2016-10-04', '17:49:42', 'abhayd', '85 5th St NW\nAtlanta, GA 30308', 'Bottled', 'Potable'),
+(6, '2016-10-04', '17:50:03', 'abhayd', '801 Atlantic Dr NW\nAtlanta, GA 30332', 'Stream', 'Treatable-Clear');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `WATERREPORT`
+--
+ALTER TABLE `WATERREPORT`
+  ADD PRIMARY KEY (`reportnumber`);

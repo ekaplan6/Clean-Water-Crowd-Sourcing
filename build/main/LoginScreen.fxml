@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane style="-fx-background-color: #3a3e40;" xmlns="http://javafx.com/javafx/8.0.112-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginScreenController">
+   <center>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Rectangle fill="#3a3e4000" height="400.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="600.0" />
+            <ImageView fitHeight="142.0" fitWidth="183.0" layoutX="209.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="logo.png" />
+               </image>
+            </ImageView>
+            <Button cancelButton="true" layoutX="185.0" layoutY="314.0" mnemonicParsing="false" onAction="#backPressed" prefWidth="74.0" text="Back">
+               <font>
+                  <Font name="Calibri" size="12" />
+               </font>
+            </Button>
+            <TextField fx:id="usernameField" layoutX="186.0" layoutY="200.0" prefHeight="27.0" prefWidth="229.0" promptText="Username" />
+            <PasswordField fx:id="passwordField" layoutX="186.0" layoutY="251.0" prefHeight="27.0" prefWidth="229.0" promptText="Password" />
+            <Button layoutX="335.0" layoutY="314.0" mnemonicParsing="false" onAction="#loginPressed" prefWidth="74.0" text="Log In">
+               <font><Font name="Calibri" size="12" /></font>
+            </Button>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

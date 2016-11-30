@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane style="-fx-background-color: #3a3e40;" xmlns="http://javafx.com/javafx/8.0.112-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SubmitWaterReportScreenController">
+   <center>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Rectangle fill="#3a3e4000" height="400.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="600.0" />
+            <Button cancelButton="true" layoutX="151.0" layoutY="333.0" mnemonicParsing="false" onAction="#backPressed" prefHeight="16.0" prefWidth="74.0" text="Back">
+               <font>
+                  <Font name="Calibri" size="12" />
+               </font>
+            </Button>
+            <TextArea fx:id="locationField" layoutX="188.0" layoutY="128.0" prefHeight="90.0" prefWidth="246.0" promptText="Location">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <font>
+                  <Font name="Calibri" size="12.0" />
+               </font>
+            </TextArea>
+            <ComboBox fx:id="waterTypeField" layoutX="188.0" layoutY="237.0" prefHeight="27.0" prefWidth="246.0" />
+            <ComboBox fx:id="waterConditionField" layoutX="188.0" layoutY="286.0" prefHeight="27.0" prefWidth="246.0" />
+            <Button layoutX="397.0" layoutY="333.0" mnemonicParsing="false" onAction="#submitPressed" prefHeight="15.0" prefWidth="74.0" text="Submit!">
+               <font>
+                  <Font name="Calibri" size="12" />
+               </font>
+            </Button>
+            <ImageView fitHeight="106.0" fitWidth="121.0" layoutX="253.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="map-location-md.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

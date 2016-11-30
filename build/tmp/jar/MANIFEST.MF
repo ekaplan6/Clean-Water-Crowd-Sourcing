@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Main-Class: fxapp.MainFXApplication
+Class-Path: GMapsFX-2.0.8.jar mysql-connector-java-5.1.18-bin.jar
+
